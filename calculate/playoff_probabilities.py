@@ -32,7 +32,7 @@ class PlayoffProbabilities(object):
         self.num_weeks = int(num_weeks)
         self.num_playoff_slots = int(num_playoff_slots)
         self.data_dir = data_dir
-        self.num_divisions = num_divisions
+        self.num_divisions = 0
         self.save_data = save_data
         self.recalculate = recalculate
         self.dev_offline = dev_offline

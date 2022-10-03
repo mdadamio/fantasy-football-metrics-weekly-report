@@ -64,7 +64,7 @@ class CovidRisk(object):
             "Seattle Seahawks": "SEA",
             "Tampa Bay Buccaneers": "TB",
             "Tennessee Titans": "TEN",
-            "Washington Football Team": "WAS"
+            "Washington Commanders": "WAS"
         }
 
         # nfl team abbreviations
