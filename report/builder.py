@@ -373,8 +373,8 @@ class FantasyFootballReport(object):
             "Report generated {0} for {1} Fantasy Football league \"{2}\" with id {3} " \
             "(<a href=\"{4}\" color=blue><u>{5}</u></a>)." \
             "<br></br><br></br><br></br>" \
-            "If you enjoy using the Fantasy Football Metrics Weekly Report app, please feel free help support its " \
-            "development below:" \
+            "Special thanks to uberfastman on Github for doing the hard stuff... Open source projects are a beautiful thing " \
+            "" \
             "</para>".format(
                 "{:%Y-%b-%d %H:%M:%S}".format(datetime.datetime.now()),
                 self.platform_str,
