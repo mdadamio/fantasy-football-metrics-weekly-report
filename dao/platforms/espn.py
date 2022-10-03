@@ -466,7 +466,7 @@ class LeagueData(object):
                         #  Washington Football Team
                         # base_player.first_name = player_json["firstName"]
                         base_player.first_name = player_json["firstName"] if player_json["firstName"] != "Washington" \
-                            else "Football Team"
+                            else "Commanders"
                         base_player.full_name = base_player.first_name
                         base_player.nfl_team_name = base_player.first_name
                         base_player.headshot_url = \

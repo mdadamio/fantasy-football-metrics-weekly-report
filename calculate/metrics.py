@@ -77,9 +77,9 @@ class CalculateMetrics(object):
                     x.record.get_wins(),
                     -x.record.get_losses(),
                     x.record.get_ties(),
-                    x.record.get_division_wins(),
-                    -x.record.get_division_losses(),
-                    x.record.get_division_ties(),
+                    # x.record.get_division_wins(),
+                    # -x.record.get_division_losses(),
+                    # x.record.get_division_ties(),
                     float(x.record.get_points_for())
                 ),
                 reverse=True
@@ -812,7 +812,7 @@ class CalculateMetrics(object):
         for team_rankings in power_ranked_teams.values():
             team_rankings["power_ranking"] = (team_rankings["score_ranking"] +
                                               team_rankings["coaching_efficiency_ranking"] +
-                                              team_rankings["luck_ranking"]) // 3.0
+                                              team_rankings["luck_ranking"]) / 3.0
         return power_ranked_teams
 
     @staticmethod
