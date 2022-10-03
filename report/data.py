@@ -284,7 +284,7 @@ class ReportData(object):
         for k_v in sorted(power_ranking_results.items(), key=lambda x: x[1]["power_ranking"]):
             # season avg calc does something where it _keys off the second value in the array
             self.data_for_power_rankings.append(
-                [k_v[1]["power_ranking"], power_ranking_results[k_v[0]]["name"], k_v[1]["manager_str"]]
+                [round(float(k_v[1]["power_ranking"]), 2), power_ranking_results[k_v[0]]["name"], k_v[1]["manager_str"]]
             )
 
         # get number of power rankings ties and ties for first

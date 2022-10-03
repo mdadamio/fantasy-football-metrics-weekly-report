@@ -442,51 +442,51 @@ class PdfGenerator(object):
                     )
                 ],
                 []
-            ],
-            [
-                [
-                    self.get_img(
-                        "resources/images/donate-bitcoin.png",
-                        hyperlink="https://share.trustwallet.com/ZoAkTpY1I9"
-                    )
-                ],
-                [
-                    self.get_img(
-                        "resources/images/donate-ethereum.png",
-                        hyperlink="https://share.trustwallet.com/MF8YBO01I9"
-                    )
-                ],
-                [
-                    self.get_img(
-                        "resources/images/donate-nano.png",
-                        hyperlink="https://share.trustwallet.com/bNXsMA11I9"
-                    )
-                ]
-            ],
-            [
-                [
-                    self.get_img(
-                        "resources/images/trust-wallet-btc.png",
-                        hyperlink="https://share.trustwallet.com/ZoAkTpY1I9"
-                    )
-                ],
-                [
-                    self.get_img(
-                        "resources/images/trust-wallet-eth.png",
-                        hyperlink="https://share.trustwallet.com/MF8YBO01I9"
-                    )
-                ],
-                [
-                    self.get_img(
-                        "resources/images/trust-wallet-nano.png",
-                        hyperlink="https://share.trustwallet.com/bNXsMA11I9"
-                    )
-                ]
-            ],
-            [
-                Paragraph("bc1qataspvklhewtswm357m0677q4raag5new2xt3e", self.text_style_small),
-                Paragraph("0x5eAa522e66a90577D49e9E72f253EC952CDB4059", self.text_style_small),
-                Paragraph("nano_3ug3o6yy983jsqdsc773izhr3jfz4dq8bz7yfhhzkkeq7s8ern1ws7dng4pq", self.text_style_small)
+            # ],
+            # [
+            #     [
+            #         self.get_img(
+            #             "resources/images/donate-bitcoin.png",
+            #             hyperlink="https://share.trustwallet.com/ZoAkTpY1I9"
+            #         )
+            #     ],
+            #     [
+            #         self.get_img(
+            #             "resources/images/donate-ethereum.png",
+            #             hyperlink="https://share.trustwallet.com/MF8YBO01I9"
+            #         )
+            #     ],
+            #     [
+            #         self.get_img(
+            #             "resources/images/donate-nano.png",
+            #             hyperlink="https://share.trustwallet.com/bNXsMA11I9"
+            #         )
+            #     ]
+            # ],
+            # [
+            #     [
+            #         self.get_img(
+            #             "resources/images/trust-wallet-btc.png",
+            #             hyperlink="https://share.trustwallet.com/ZoAkTpY1I9"
+            #         )
+            #     ],
+            #     [
+            #         self.get_img(
+            #             "resources/images/trust-wallet-eth.png",
+            #             hyperlink="https://share.trustwallet.com/MF8YBO01I9"
+            #         )
+            #     ],
+            #     [
+            #         self.get_img(
+            #             "resources/images/trust-wallet-nano.png",
+            #             hyperlink="https://share.trustwallet.com/bNXsMA11I9"
+            #         )
+            #     ]
+            # ],
+            # [
+            #     Paragraph("bc1qataspvklhewtswm357m0677q4raag5new2xt3e", self.text_style_small),
+            #     Paragraph("0x5eAa522e66a90577D49e9E72f253EC952CDB4059", self.text_style_small),
+            #     Paragraph("nano_3ug3o6yy983jsqdsc773izhr3jfz4dq8bz7yfhhzkkeq7s8ern1ws7dng4pq", self.text_style_small)
             ]
         ]
         self.report_footer_title = Table(footer_title, colWidths=7.75 * inch, style=self.title_style)
@@ -1218,7 +1218,7 @@ class PdfGenerator(object):
         elements.append(self.spacer_tenth_inch)
         donate_header_data = [[
             Paragraph(
-                "Enjoying the app? Please consider donating to support its development:", self.text_style_italics),
+                "Enjoy the weekly report", self.text_style_italics),
             self.get_img(
                 "resources/images/donate.png",
                 hyperlink="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=VZZCNLRHH9BQS"
